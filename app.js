@@ -31,3 +31,7 @@ function totaldivision(){
     ShowSpent(names,spent);
     TotalAndEach(totspent); 
 }
+
+function refresh(){
+    location.reload(true);
+  }

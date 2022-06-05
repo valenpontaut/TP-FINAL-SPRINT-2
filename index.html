@@ -9,19 +9,34 @@
 
 </head>
 <body>
-    <header>
-        <h1>App de gastos</h1>
-        <h2>Ingresá cuánto gastó cada persona</h2>
+    <header class="container-fluid bg-primary p-2 text-center text-light">
+        <div class="row align-items-center"></div>
+            <div class="col-12"></div>
+                <h1><strong>App de gastos</strong></h1>
+        <div class="row align-items-center"></div>
+            <div class="col-12"></div>
+                <h2>Ingresá cuánto gastó cada persona</h2>
     </header>
-    <section>
+    <section class="container-fluid col-12 p-0 m-1">
         <form>
-            <input type="text" class="names" id="names" placeholder="Nombre">
-            <input type="number" class="spent" id="spent" placeholder="$$$">
-            <button type="button" onclick="totaldivision()">Calcular</button>
+            <input type="text" class="names col-6 m-1" id="names" placeholder="Nombre">
+            <div class="row">
+                <div class="col-6">
+                     <div class="input-group m-1" >
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="spent" placeholder="XX.XXX">
+                <span class="input-group-text">.00</span>
+            </div> 
+                </div>
+            </div>
+                        
+            <button type="button" class="btn btn-outline-primary col-2 m-1" onclick="totaldivision()">Calcular</button>
+            <button type="button" class="btn btn-outline-primary col-2 m-1" onclick="refresh()">Resetear</button>
         </form>
-        <div id="listspent"></div>
-        <div id="total">Total: </div>
-        <div id="final">A cada uno le toca aportar:</div>
+        <div class="m-1 overflow-auto" id="listspent"></div>
+        <div class="m-1" id="total">Total: </div>
+        <div class="m-1" id="final">A cada uno le toca aportar:</div>
+
     </section>
     <script src="app.js"></script>
 </body>
