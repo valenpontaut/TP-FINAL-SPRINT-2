@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>App de gastos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <h1>App de gastos</h1>
+        <h2>Ingresá cuánto gastó cada persona</h2>
+    </header>
+    <section>
+        <form>
+            <input type="text" class="names" id="names" placeholder="Nombre">
+            <input type="number" class="spent" id="spent" placeholder="$$$">
+            <button type="button" onclick="totaldivision()">Calcular</button>
+        </form>
+        <div id="listspent"></div>
+        <div id="total">Total: </div>
+        <div id="final">A cada uno le toca aportar:</div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
